@@ -10,18 +10,24 @@ package com.mycompany.polimorfismo;
  * @author daniel
  */
 public class PoweredVehicle extends Vehicle{
-    String mytipefuel;
+    String tipefuel;
 
-    public PoweredVehicle(String mybrand, String mymodel) {
+    public PoweredVehicle(String tipefuel, String mybrand, String mymodel) {
         super(mybrand, mymodel);
+        this.tipefuel = tipefuel;
     }
 
     public String getMytipefuel() {
-        return mytipefuel;
+        return tipefuel;
     }
 
     public void setMytipefuel(String mytipefuel) {
-        this.mytipefuel = mytipefuel;
+        this.tipefuel = mytipefuel;
+    }
+
+    @Override
+    public void info2() {
+        System.out.print("SOY VEHICULO MOTORIZADO");
     }
     
 }

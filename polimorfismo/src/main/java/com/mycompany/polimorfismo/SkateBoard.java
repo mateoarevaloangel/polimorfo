@@ -10,19 +10,21 @@ package com.mycompany.polimorfismo;
  * @author daniel
  */
 public class SkateBoard extends Vehicle{
-    String myboardlength;
+    private float boardlength;
 
-    public SkateBoard(String myboardlength, String mybrand, String mymodel) {
+    public SkateBoard(float myboardlength, String mybrand, String mymodel) {
         super(mybrand, mymodel);
-        this.myboardlength = myboardlength;
+        this.boardlength = myboardlength;
+    }
+    public float getMyboardlength() {
+        return boardlength;
     }
 
-    public String getMyboardlength() {
-        return myboardlength;
+    public void setMyboardlength(float myboardlength) {
+        this.boardlength = myboardlength;
     }
-
-    public void setMyboardlength(String myboardlength) {
-        this.myboardlength = myboardlength;
+    public void info2(){
+        System.out.print("SOY PATINETA");
     }
     
 }

@@ -10,19 +10,21 @@ package com.mycompany.polimorfismo;
  * @author daniel
  */
 public class Jet extends PoweredVehicle{
-    String myenginecount;
+    int enginecount;
 
-    public Jet(String myenginecount, String mybrand, String mymodel) {
-        super(mybrand, mymodel);
-        this.myenginecount = myenginecount;
+    public Jet(int enginecount, String tipefuel, String mybrand, String mymodel) {
+        super(tipefuel, mybrand, mymodel);
+        this.enginecount = enginecount;
+    }
+    public void info3(){
+        System.out.print("SOY JET");
     }
 
-    public String getMyenginecount() {
-        return myenginecount;
+    public int getEnginecount() {
+        return enginecount;
     }
 
-    public void setMyenginecount(String myenginecount) {
-        this.myenginecount = myenginecount;
+    public void setEnginecount(int enginecount) {
+        this.enginecount = enginecount;
     }
-    
 }

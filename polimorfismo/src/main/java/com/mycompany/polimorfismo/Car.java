@@ -10,19 +10,22 @@ package com.mycompany.polimorfismo;
  * @author daniel
  */
 public class Car extends PoweredVehicle{
-    String myenginesize;
+    String enginesize;
 
-    public Car(String myenginesize, String mybrand, String mymodel) {
-        super(mybrand, mymodel);
-        this.myenginesize = myenginesize;
+    public Car(String enginesize, String tipefuel, String mybrand, String mymodel) {
+        super(tipefuel, mybrand, mymodel);
+        this.enginesize = enginesize;
     }
-
+    public void info3(){
+        System.out.print("SOY CARRO");
+    }
+    
     public String getMyenginesize() {
-        return myenginesize;
+        return enginesize;
     }
 
     public void setMyenginesize(String myenginesize) {
-        this.myenginesize = myenginesize;
+        this.enginesize = myenginesize;
     }
     
 }

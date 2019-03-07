@@ -24,6 +24,9 @@ public class Biccycle extends Vehicle{
     public void setMygearcount(String mygearcount) {
         this.mygearcount = mygearcount;
     }
-    
 
+    @Override
+    public void info2() {
+        System.out.print("SOY BICICLETA");
+    }
 }

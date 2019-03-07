@@ -9,15 +9,18 @@ package com.mycompany.polimorfismo;
  *
  * @author daniel
  */
-public class Vehicle {
+public abstract class Vehicle implements IVehicle{
     String mybrand;
     String mymodel;
 
     public Vehicle(String mybrand, String mymodel) {
         this.mybrand = mybrand;
         this.mymodel = mymodel;
+    }    
+    public void info(){
+        System.out.print("SOY VEHICULO");
     }
-
+    
     public String getMybrand() {
         return mybrand;
     }
