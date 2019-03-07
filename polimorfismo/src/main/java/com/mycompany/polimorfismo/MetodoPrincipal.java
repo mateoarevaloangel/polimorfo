@@ -16,16 +16,25 @@ public class MetodoPrincipal {
         ArrayList<Vehicle> listaVehiculos=new ArrayList<Vehicle>();
         SkateBoard patineta = new SkateBoard((float)5.5,"DC","M17");
         Vehicle vehicle = new SkateBoard((float)5.5,"DC","M17");
+        Vehicle vehicle2 = new Jet(5,"GAS","DC","M17");
         //vehicle.info2();
         Car car = new Car("grande","combustible","mercedez","gtx");
         listaVehiculos.add(patineta);
         listaVehiculos.add(vehicle);
+        listaVehiculos.add(vehicle2);
         listaVehiculos.add(car);
-        for(Vehicle tabla:listaVehiculos){
-            tabla.info2();
+        ;
+        for(Vehicle vehiculo:listaVehiculos){
+            if(vehiculo instanceof Car){
+                ((Car)vehiculo).info3();
+            }else{
+                if(vehiculo instanceof Jet){
+                ((Jet)vehiculo).info3();
+            }else{
+                    vehiculo.info2();
+                }
+            }            
         }
-        car.info();
-        //System.out.println(car.getMyenginesize()); 
     }
     
 }
