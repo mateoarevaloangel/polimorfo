@@ -24,7 +24,7 @@ public class SkateBoard extends Vehicle{
         this.boardlength = myboardlength;
     }
     public void info2(){
-        System.out.print("SOY PATINETA");
+        System.out.print("SOY PATINETA\n");
     }
     
 }

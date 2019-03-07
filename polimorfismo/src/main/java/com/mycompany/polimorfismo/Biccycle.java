@@ -27,6 +27,6 @@ public class Biccycle extends Vehicle{
 
     @Override
     public void info2() {
-        System.out.print("SOY BICICLETA");
+        System.out.print("SOY BICICLETA\n");
     }
 }

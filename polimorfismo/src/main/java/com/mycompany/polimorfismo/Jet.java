@@ -17,7 +17,7 @@ public class Jet extends PoweredVehicle{
         this.enginecount = enginecount;
     }
     public void info3(){
-        System.out.print("SOY JET");
+        System.out.print("SOY JET\n");
     }
 
     public int getEnginecount() {

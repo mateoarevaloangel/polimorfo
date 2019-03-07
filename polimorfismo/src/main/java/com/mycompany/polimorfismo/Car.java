@@ -18,7 +18,7 @@ public class Car extends PoweredVehicle{
     }
     
     public void info3(){
-        System.out.print("SOY CARRO");
+        System.out.print("SOY CARRO\n");
     }
     
     public String getMyenginesize() {
