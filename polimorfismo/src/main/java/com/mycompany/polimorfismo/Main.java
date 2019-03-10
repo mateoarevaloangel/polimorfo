@@ -8,6 +8,8 @@ package com.mycompany.polimorfismo;
 /**
  *
  * @author daniel
+ * @author MateoG
+ * @version 1.0
  */
 public class Main {
     

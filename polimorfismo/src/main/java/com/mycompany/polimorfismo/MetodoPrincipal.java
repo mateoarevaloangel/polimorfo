@@ -10,8 +10,14 @@ import java.util.ArrayList;
 /**
  *
  * @author daniel
+ * @author MateoG
+ * @version 1.0
  */
 public class MetodoPrincipal {
+    /**
+     * Metodo para llenar un array de vehiculos
+     * 
+     */ 
     public void metodo(){
         ArrayList<Vehicle> listaVehiculos=new ArrayList<Vehicle>();
         SkateBoard patineta = new SkateBoard((float)5.5,"DC","M17");

@@ -8,10 +8,20 @@ package com.mycompany.polimorfismo;
 /**
  *
  * @author daniel
+ * @author MateoG
+ * @version 1.0
  */
 public class PoweredVehicle extends Vehicle{
+    /**
+     * Variable tipo string para el tipo de combustible
+     */
     String tipefuel;
-
+    /**
+     * Constructor con tipo de combustible, marca y modelo
+     * @param  tipefuel guarda combustible
+     * @param mybrand guarda marca
+     * @param mymodel guarda modelo
+     */ 
     public PoweredVehicle(String tipefuel, String mybrand, String mymodel) {
         super(mybrand, mymodel);
         this.tipefuel = tipefuel;
@@ -24,7 +34,10 @@ public class PoweredVehicle extends Vehicle{
     public void setMytipefuel(String mytipefuel) {
         this.tipefuel = mytipefuel;
     }
-
+    /**
+     * Método vehiculo motorizado
+     * 
+     */ 
     @Override
     public void info2() {
         System.out.print("SOY VEHICULO MOTORIZADO\n");
